@@ -1,0 +1,11 @@
+body{
+    text-align: center; 
+    margin:0, 100px;
+    padding:0,250px;
+    background-color: aqua;
+}
+
+img{
+  width: 170px;
+  padding:30px;
+}
