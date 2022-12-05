@@ -1,4 +1,3 @@
-// import "stayles.css";
 
 const express = require("express");
 const https = require("https");
@@ -20,7 +19,7 @@ const apiKey = "f50c7e875fa246a303d7e3e482ee85a1";
 const units = "metric";
 const yurtURL = "https://api.openweathermap.org/data/2.5/weather?q="+ query +"&units="+ units +"&APPID="+ apiKey +"";
 https.get(yurtURL, function (response) {
-    console.log(response.statusCode);
+    // console.log(response.statusCode);
     response.on("data", function (data) {
         const weatherData = JSON.parse(data)
         const temp = weatherData.main.temp
