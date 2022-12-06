@@ -9,6 +9,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get("/", function (req, res) {
     res.sendFile(__dirname + "/index.html");
+    
 
 })
 
@@ -36,10 +37,6 @@ https.get(yurtURL, function (response) {
     });
 });
 })
-
-
-
-
 
 
 app.listen(3000, function (request, response) {
